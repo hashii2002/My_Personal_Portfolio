@@ -10,6 +10,8 @@
 
     <!-- favicon -->
     <link rel="icon" type="image/png"  href="./asset/logo.png">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- ================= HOME PAGE HEADER ================= -->
@@ -30,11 +32,16 @@
     </header>
 
     <div class="side-controls">
-        <div class="control-icon">
-            <i class="fas fa-cog"></i> </div>
-        <div class="control-icon">
-            <i class="fas fa-moon"></i> </div>
-    </div>
+
+    <button class="control-icon rotate-icon" id="settingsBtn">
+        <i class="fas fa-cog"></i>
+    </button>
+
+    <button class="control-icon" id="themeBtn">
+        <i class="fas fa-moon"></i>
+    </button>
+
+</div>
 
      <!-- ================= HOME PAGE ================= -->
     <section class="home">
@@ -44,12 +51,12 @@
             <h1>Hashini Emalsha</h1>
             <h3>And I'm a <span class="highlight">Full Stack Developer</span></h3>
 
-            <p class="description">
-                I'm an undergraduate with a passion for web development and UI/UX design.<br>
+            <p class="description-home">
+                I'm an undergraduate with a passion for web development and UI/UX design.
                 I love turning ideas into clean, simple, and user-friendly digital experiences.
             </p>
 
-            <div class="social-links">
+            <div class="social-links-home">
                 <a href="https://www.facebook.com/share/1BFymnXqG9/"><i class="fab fa-facebook"></i></a>
                 <a href="https://www.instagram.com/hashii2002?igsh=MTVlYzFqN3oweW0xZg=="><i class="fab fa-instagram"></i></a>
                 <a href="https://whatsapp.com/dl/"><i class="fab fa-whatsapp"></i></a>
@@ -65,7 +72,32 @@
                 <img src="./asset/myphoto.jpeg" alt="Hashini Emalsha" width="300" height="300">
             
                 <div class="cv-download-circle">
-                    <p>Download CV. Download CV</p>
+                    <div class="text-circle">
+                        <span style="--i:1">D</span>
+                        <span style="--i:2">O</span>
+                        <span style="--i:3">W</span>
+                        <span style="--i:4">N</span>
+                        <span style="--i:5">L</span>
+                        <span style="--i:6">O</span>
+                        <span style="--i:7">A</span>
+                        <span style="--i:8">D</span>
+                        <span style="--i:9"> </span>
+                        <span style="--i:10">C</span>
+                        <span style="--i:11">V</span>
+                        <span style="--i:12">.</span>
+                        <span style="--i:13">D</span>
+                        <span style="--i:14">O</span>
+                        <span style="--i:15">W</span>
+                        <span style="--i:16">N</span>
+                        <span style="--i:17">L</span>
+                        <span style="--i:18">O</span>
+                        <span style="--i:19">A</span>
+                        <span style="--i:20">D</span>
+                        <span style="--i:21"> </span>
+                        <span style="--i:22">C</span>
+                        <span style="--i:23">V</span>
+                        <span style="--i:24">.</span>
+                        </div>
                     <a href="./asset/cv.png"><i class="fas fa-download"></i></a>
                 </div>
             </div>
@@ -75,60 +107,47 @@
     <!-- ===================== ABOUT SECTION ======================== -->
 
     <section class="about" id="about">
+    <div class="about-content">
+        <div class="about-img-section">
+            <div class="about-image-container">
+                <img src="./asset/myphoto.jpeg" alt="Hashini Emalsha">
+            </div>
+        </div>
 
-        <div class="about-content">
+        <div class="about-details">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Full Stack Developer!</h3>
-            
-            <p>
-                I'm Hashini Emalsha, an undergraduate with a strong passion for web development and UI/UX design. I enjoy transforming ideas into clean, 
-                simple, and user-friendly digital experiences that focus on both functionality and visual clarity.
-            </p>
-            
-            <p>
-                Through my academic journey, I have gained hands-on experience with technologies such as HTML, CSS, JavaScript, Java, and SQL, and
-                I continuously work on improving my technical and problem-solving skills. I value structured design, usability, and attention to detail 
-                when developing web applications.
-            </p>
+            <p>I'm Hashini Emalsha, an undergraduate with a strong passion for web development and UI/UX design. I enjoy transforming ideas into clean, 
+            simple, and user-friendly digital experiences that focus on both functionality and visual clarity.</p>
 
-            <p>
-                This portfolio represents my learning journey, projects, assignments, and skills, reflecting my commitment to continuous improvement and
-                my aspiration to grow as a professional in the field of information technology.
-            </p>
+            <p>Through my academic journey, I have gained hands-on experience with technologies such as HTML, CSS, JavaScript, Java, and SQL, and
+            I continuously work on improving my technical and problem-solving skills. I value structured design, usability, and attention to detail 
+            when developing web applications.</p>
 
-            <div class="about-img-section">
-                <div class="about-image-container">
-                    <img src="./asset/myphoto.jpeg" alt="Hashini Emalsha" width="250" height="250">
-                </div>
-            </div>
+            <p>This portfolio represents my learning journey, projects, assignments, and skills, reflecting my commitment to continuous improvement and
+            my aspiration to grow as a professional in the field of information technology.</p>
 
-            <div class="stats-container">
-                <div class="stat-box">
-                    <h3>+ 04</h3>
-                    <span>Project Completed</span>
-                </div>
-                
-                <div class="stat-box">
-                    <h3>+ 05</h3>
-                    <span>GitHub Repositories</span>
-                </div>
-                
-                <div class="stat-box">
-                    <h3>+ 02</h3>
-                    <span>Years of Experience</span>
-                </div>
-            </div>
-
-            <a href="#more-info" class="button-more">More About Me</a>
         </div>
-</section>
 
+        <div class="stats">
+        <div class="stats-container">
+            <div class="stat-box"><h3>+ 04</h3><span>Project Completed</span></div>
+            <div class="stat-box"><h3>+ 05</h3><span>GitHub Repositories</span></div>
+            <div class="stat-box"><h3>+ 02</h3><span>Years of Experience</span></div>
+        </div>
+        <div class="button-section">
+                <a href="#more-info" class="button-more">More About Me</a>
+        </div>
+        </div>
+    </div>
+</section>
+    
  <!-- ===================== EDUCATION SECTION ======================== -->
 <div id="more-info">
 
 <section class="education" id="education">
     
-    <h2 class="main-heading">EDUCATIONAL <span>QUALIFICATIONS</span></h2>
+    <h2 class="main-heading">EDUCATIONAL <span> QUALIFICATIONS</span></h2>
 
     <div class="education-container">
         
@@ -161,36 +180,39 @@
         <div class="education-column">
             <h3 class="sub-heading">Courses</h3>
 
-            <div class="timeline-container">
-                <div class="education-card">
-                    <div class="dot"></div>
-                    <div class="card-content">
-                        <h3>Diploma in Information Technology</h3>
-                        <p>ICBT Campus, Galle, Sri Lanka</p>
-                        <p class="duration">Duration : Six Month</p>
-                        <a href="./asset/dipICT.jpeg" class="view-btn">View Certificate</a>
+            <div class="courses-scroll-container">
+                <div class="timeline-container">
+                    <div class="education-card">
+                        <div class="dot"></div>
+                        <div class="card-content">
+                            <h3>Diploma in Information Technology</h3>
+                            <p>ICBT Campus, Galle, Sri Lanka</p>
+                            <p class="duration">Duration : Six Month</p>
+                            <a href="./asset/dipICT.jpeg" class="view-btn">View Certificate</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="education-card">
-                    <div class="dot"></div>
-                    <div class="card-content">
-                        <h3>Diploma in English</h3>
-                        <p>ICBT Campus, Galle, Sri Lanka</p>
-                        <p class="duration">Duration : Six Month</p>
-                        <a href="./asset/diplomaEnglish.jpeg" class="view-btn">View Certificate</a>
+                    <div class="education-card">
+                        <div class="dot"></div>
+                        <div class="card-content">
+                            <h3>Diploma in English</h3>
+                            <p>ICBT Campus, Galle, Sri Lanka</p>
+                            <p class="duration">Duration : Six Month</p>
+                            <a href="./asset/diplomaEnglish.jpeg" class="view-btn">View Certificate</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="education-card">
-                    <div class="dot"></div>
-                    <div class="card-content">
-                        <h3>Following Higher Diploma in Software Engineering program</h3>
-                        <p>Institute of Software Engineering(IJSE), Galle, Sri Lanka</p>
-                        <p class="duration">Duration : Two Years</p>
+                    <div class="education-card">
+                        <div class="dot"></div>
+                        <div class="card-content">
+                            <h3>Following Higher Diploma in Software Engineering program</h3>
+                            <p>Institute of Software Engineering(IJSE), Galle, Sri Lanka</p>
+                            <p class="duration">Duration : Two Years</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
     </div>
@@ -199,9 +221,7 @@
 <!-- ================= ACTIVITIES SECTION ================= -->
 <section class="activities" id="activities">
 
-    <h2 class="section-title">
-        <span>Activities</span>
-    </h2>
+    <h2 class="section-title">Activi<span>ties</span></h2>
 
     <div class="activities-timeline">
 
@@ -269,14 +289,30 @@
 
 <section class="gallery" id="gallery">
     
-    <h2 class="main-heading">GAL<span>LERY</span></h2>
+    <h2 class="main-heading-gallery">GAL<span>LERY</span></h2>
 
     <div class="gallery-tabs">
-        <a href="#" class="button-photos">Photos</a>
-        <a href="#" class="button-videos">Videos</a>
+        <a href="#Photo-display" class="button-photos">Photos</a>
+        <a href="#Video-display" class="button-videos">Videos</a>
     </div>
 
-    <div class="Photo-container">
+    <div class="videos-container" id="Video-display">
+
+        <div class="card">
+            <video width="200" controls>
+                <source src="./asset/v1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="card">
+            <video width="200" controls>
+                <source src="./asset/v2.mp4" type="video/mp4" width="200" height="150">
+            </video>
+        </div>
+
+    </div>
+
+    <div class="Photo-container" id="Photo-display">
 
         <!-- Card 1 -->
         <div class="card">
@@ -312,7 +348,7 @@
 <!-- POPUP 1 -->
 <div id="popup1" class="popup">
     <div class="popup-content">
-        <a href="#" class="close">&times;</a>
+        <a href="#gallery" class="close">&times;</a>
         <h2>My Photos</h2>
 
         <div class="popup-gallery">
@@ -329,7 +365,7 @@
 <!-- POPUP 2 -->
 <div id="popup2" class="popup">
     <div class="popup-content">
-        <a href="#" class="close">&times;</a>
+        <a href="#gallery" class="close">&times;</a>
         <h2>School Photos</h2>
 
         <div class="popup-gallery">
@@ -344,7 +380,7 @@
 <!-- POPUP 3 -->
 <div id="popup3" class="popup">
     <div class="popup-content">
-        <a href="#" class="close">&times;</a>
+        <a href="#gallery" class="close">&times;</a>
         <h2>Uni Photos</h2>
 
         <div class="popup-gallery">
@@ -355,22 +391,6 @@
         </div>
     </div>
 </div>
-
-<div class="videos-container">
-
-        <div class="card">
-            <video width="200" controls>
-                <source src="./asset/v1.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <div class="card">
-            <video width="200" controls>
-                <source src="./asset/v2.mp4" type="video/mp4" width="200" height="150">
-            </video>
-        </div>
-
-    </div>
 
 <!-- ================= PREFERRED STREAMS ================= -->
 
@@ -437,7 +457,7 @@
             <p>Name : Geeth Dimantha </p>
             <p class="position">Hatton National Bank - Banker</p>
 
-            <p><i class="fa-regular fa-envelope"></i> geethdimantha22@gmail.com</p>
+            <p><i class="fa-regular fa-envelope"></i> <a href="mailto:geethdimantha22@gmail.com" class="con-link">geethdimantha22@gmail.com</a></p>
             <p><i class="fa-solid fa-house"></i> 133, Deegoda, Ukwatta, Ginthota, Galle</p>
         </div>
 
@@ -446,7 +466,7 @@
             <p>Name : W. K. D. C. De Silva </p>
             <p class="position">V/A Agarabodhi Collage - Government Teacher</p>
 
-            <p><i class="fa-regular fa-envelope"></i> dhananjalii@gmail.com</p>
+            <p><i class="fa-regular fa-envelope"></i><a href="mailto:dhananjalii@gmail.com" class="con-link">dhananjalii@gmail.com</a></p>
             <p><i class="fa-solid fa-house"></i> No 276/2, Elpitiya Road, Paragahathota, Wathugedara</p>
         </div>
 
@@ -466,21 +486,31 @@
         <div class="skills-row">
             <div class="skill-card">
                 <h3>Language Skills</h3>
-                <div class="progress-bar-container">
-                    <span>Sinhala</span>
-                    <span>100%</span>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Sinhala</span>
+                        <span>100%</span>
+                    </div>
                     <div class="bar">
                         <div class="fill" style="width: 100%;"></div>
                     </div>
-                    
-                    <span>English</span>
-                    <span>80%</span>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>English</span>
+                        <span>80%</span>
+                    </div>
                     <div class="bar">
                         <div class="fill" style="width: 80%;"></div>
                     </div>
-                    
-                    <span>Tamil</span>
-                    <span>80%</span>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Tamil</span>
+                        <span>80%</span>
+                    </div>
                     <div class="bar">
                         <div class="fill" style="width: 80%;"></div>
                     </div>
@@ -489,27 +519,41 @@
 
             <div class="skill-card">
                 <h3>MS Office Skills</h3>
-                <div class="progress-bar">
-                    <span>MS Word</span>
-                    <span>100%</span>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>MS Word</span>
+                        <span>100%</span>
+                    </div>
                     <div class="bar">
                         <div class="fill" style="width: 100%;"></div>
                     </div>
-                    
-                    <span>MS Excel</span>
-                    <span>95%</span>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>MS Excel</span>
+                        <span>95%</span>
+                    </div>
                     <div class="bar">
                         <div class="fill" style="width: 95%;"></div>
                     </div>
-                    
-                    <span>MS PowerPoint</span>
-                    <span>100%</span>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>MS PowerPoint</span>
+                        <span>100%</span>
+                    </div>
                     <div class="bar">
                         <div class="fill" style="width: 100%;"></div>
                     </div>
+                </div>
 
-                    <span>MS Access</span>
-                    <span>80%</span>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>MS Access</span>
+                        <span>80%</span>
+                    </div>
                     <div class="bar">
                         <div class="fill" style="width: 80%;"></div>
                     </div>
@@ -521,37 +565,37 @@
             <h3>Professional Skills</h3>
             <div class="circles-container">
                 <div class="circle-item">
-                    <div class="circular-progress" data-percent="95">
+                    <div class="circular-progress" style="--target-percent: 95;">
                         <span>95%</span>
                     </div>
                     <p>Communication</p>
                 </div>
                 <div class="circle-item">
-                    <div class="circular-progress" data-percent="95">
+                    <div class="circular-progress" style="--target-percent: 95;">
                         <span>95%</span>
                     </div>
                     <p>Leadership</p>
                 </div>
                 <div class="circle-item">
-                    <div class="circular-progress" data-percent="90">
+                    <div class="circular-progress" style="--target-percent: 90;">
                         <span>90%</span>
                     </div>
                     <p>Creativity</p>
                 </div>
                 <div class="circle-item">
-                    <div class="circular-progress" data-percent="95">
+                    <div class="circular-progress" style="--target-percent: 95;">
                         <span>95%</span>
                     </div>
                     <p>Hard working</p>
                 </div>
                 <div class="circle-item">
-                    <div class="circular-progress" data-percent="85">
+                    <div class="circular-progress" style="--target-percent: 85;">
                         <span>85%</span>
                     </div>
                     <p>well Organized</p>
                 </div>
                 <div class="circle-item">
-                    <div class="circular-progress" data-percent="95">
+                    <div class="circular-progress" style="--target-percent: 95;">
                         <span>95%</span>
                     </div>
                     <p>Team Work</p>
@@ -564,7 +608,7 @@
             <div class="teck-skill">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="40" height="40">
                 <div class="bar"><div class="fill" style="width: 90%;"></div></div>
-                <span>90%</span>
+                <span>80%</span>
             </div>
             <div class="tech-skill">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="40" height="40">
@@ -578,24 +622,45 @@
             </div>
             <div class="tech-skill">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="40" height="40">
-                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
-                <span>90%</span>
+                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                <span>85%</span>
             </div>
             <div class="tech-skill">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" width="40" height="40">
                 <div class="bar"><div class="fill" style="width: 80%;"></div></div>
-                <span>90%</span>
+                <span>80%</span>
             </div>
             <div class="tech-skill">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40" height="40">
-                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
-                <span>90%</span>
+                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                <span>85%</span>
             </div>
         </div>
 
         <div class="skill">
             <h3>Tools</h3>
             <div class="tools-icons-grid">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/datagrip/datagrip-original.svg" alt="DataGrip" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netbeans/netbeans-original.svg" alt="Draw.io" width="40" height="40">
+                <img src="https://img.icons8.com/color/48/figma--v1.png" alt="Figma" width="40" height="40">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Diagrams.net_Logo.svg" alt="Draw.io" width="40" height="40">
+
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/datagrip/datagrip-original.svg" alt="DataGrip" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netbeans/netbeans-original.svg" alt="Draw.io" width="40" height="40">
+                <img src="https://img.icons8.com/color/48/figma--v1.png" alt="Figma" width="40" height="40">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Diagrams.net_Logo.svg" alt="Draw.io" width="40" height="40">
+
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/datagrip/datagrip-original.svg" alt="DataGrip" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" width="40" height="40">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netbeans/netbeans-original.svg" alt="Draw.io" width="40" height="40">
+                <img src="https://img.icons8.com/color/48/figma--v1.png" alt="Figma" width="40" height="40">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Diagrams.net_Logo.svg" alt="Draw.io" width="40" height="40">
+
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" width="40" height="40">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/datagrip/datagrip-original.svg" alt="DataGrip" width="40" height="40">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="IntelliJ" width="40" height="40">
@@ -731,8 +796,8 @@
 <section class="projects" id="projects">
     
     <div class="projects-header">
-        <h2 class="sub-heading">Projects that reflect my</h2>
-        <h1 class="main-heading">expertise and vision</h1>
+        <h2 class="sub-heading-project">Projects that reflect my</h2>
+        <h1 class="main-heading-project">expertise and vision</h1>
     </div>
 
     <div class="projects-grid">
@@ -740,6 +805,9 @@
         <div class="project-card">
             <div class="project-img">
                 <img src="./asset/Screenshot 2026-02-27 110809.png" alt="Food City Management System" width="300" height="200">
+            </div>
+            <div class="project-overlay">
+                <p>This is a complete management system for Food City stores, handling inventory, sales, and billing with a user-friendly interface.</p>
             </div>
             <div class="project-footer">
                 <h3>Food City Management System</h3>
@@ -753,6 +821,9 @@
             <div class="project-img">
                 <img src="./asset/Screenshot 2026-02-08 101908.png" alt="Rent Car Management System" width="300" height="200">
             </div>
+            <div class="project-overlay">
+                <p>This is a complete management system for Rent car management System, handling inventory, sales, and billing with a user-friendly interface.</p>
+            </div>
             <div class="project-footer">
                 <h3>Rent Car Management System</h3>
                 <a href="https://github.com/hashii2002/HCJ_Rent_Car_System" target="_blank" class="arrow-circle">
@@ -765,6 +836,9 @@
             <div class="project-img">
                 <img src="./asset/0x0.webp" alt="Supermarket Management System" width="300" height="200">
             </div>
+            <div class="project-overlay">
+                <p>This is a complete management system for Supermarket Management System, handling inventory, sales, and billing with a user-friendly interface.</p>
+            </div>
             <div class="project-footer">
                 <h3>Supermarket Management System</h3>
                 <a href="https://github.com/hashii2002/SuperMarket_Project" target="_blank" class="arrow-circle">
@@ -776,6 +850,9 @@
         <div class="project-card">
             <div class="project-img">
                 <img src="./asset/game.avif" alt="Connect Four Game" width="300" height="200">
+            </div>
+            <div class="project-overlay">
+                <p>A fully functional digital version of the 'Connect Four' board game, built with a focus on Object-Oriented Programming (OOP) principles.</p>
             </div>
             <div class="project-footer">
                 <h3>Connect four game</h3>
@@ -833,7 +910,7 @@
     
     <div class="contact-header">
         <p>Have You Any Questions ?</p>
-        <h1 class="main-heading">CONTACT <span>ME</span></h1>
+        <h1 class="main-heading-con">CONTACT <span>ME</span></h1>
         <h3>Let's Talk</h3>
     </div>
 
