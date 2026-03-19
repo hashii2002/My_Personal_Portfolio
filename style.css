@@ -5,12 +5,22 @@
     font-family:'Times New Roman', Times, serif;
 }
 
+:root {
+    background: #0f0817; 
+    color: #ffffff;
+}
+
 body {
     
-    background-color: #0f0817; 
+    background: #0f0817; 
     color: #ffffff;
     overflow-x: hidden;
     position: relative;
+}
+
+body.light-mode {
+    background: #a873cb;
+    color: #0f0817;
 }
 
 body::before {
@@ -163,8 +173,10 @@ body::before {
     line-height: 1.2;
 }
 
-.highlight {
+.text {
     color: #7d2ae8;
+    font-weight: 900;
+
 }
 
 .description-home {
@@ -1198,14 +1210,16 @@ body::before {
     height: 100%;
     background: #904ce9; 
     border-radius: 10px;
-
-    animation: fill-bar 2s ease-out forwards;
     transform-origin: left; 
+    width: 0;
 }
 
 @keyframes fill-bar {
-    0% {
+    from {
         width: 0%;
+    }
+    to {
+        width: var(--target-width);
     }
 }
 
@@ -1249,9 +1263,9 @@ body::before {
     align-items: center;
     position: relative;
     
-    --percent-val: var(--target-percent); 
+    --percent-val: 0; 
     background: conic-gradient( #904ce9 calc(var(--percent-val) * 3.6deg),  #222 0deg);
-    animation: fill-progress 2s ease-out forwards;
+
 }
 
 /* ring shape */
@@ -1338,6 +1352,14 @@ body::before {
 
 .tools-icons-grid img:hover {
     transform: scale(1.2);
+}
+
+.animate .fill {
+    animation: fill-bar 2s ease-out forwards;
+}
+
+.animate .circular-progress {
+    animation: fill-progress 2s ease-out forwards;
 }
 
 /* =========================== Assignments Section ============================= */
@@ -2905,5 +2927,60 @@ body::before {
 
     .footer-bottom{
         font-size:12px;
+    }
+}
+
+/*--------------- menu bar------------------ */
+@media (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        top: 5px;
+        left: -100%;
+        width: 80%;
+        max-width: 350px;
+        height: 100vh;
+        background: rgba(21, 4, 35, 0.95); 
+        backdrop-filter: blur(15px);
+        border-top: 0.1rem solid rgba(255, 255, 255, 0.1);
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s ease;
+    }
+
+    .navbar.active {
+        left: 0;
+        box-shadow: 0 0 30px rgba(57, 9, 92, 0.473);
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 18px;
+        margin: 15px;
+        color: #fff; 
+        text-align: center;
+        transition: 0.3s;
+    }
+    .navbar a:hover {
+        color: rgb(101, 18, 160); 
+    }
+}
+
+@media (max-width: 425px) {
+
+    .navbar {
+        width: 70%;
+        max-width: 250px;
+    }
+     .navbar a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 375px) {
+     .navbar a {
+        font-size: 14px;
     }
 }

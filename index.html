@@ -38,15 +38,15 @@
 
     <div class="side-controls">
 
-    <button class="control-icon rotate-icon" id="settingsBtn">
-        <i class="fas fa-cog"></i>
-    </button>
+        <button class="control-icon rotate-icon" id="settingsBtn">
+            <i class="fas fa-cog"></i>
+        </button>
 
-    <button class="control-icon" id="themeBtn">
-        <i class="fas fa-moon"></i>
-    </button>
+        <button class="control-icon" id="themeBtn">
+            <i class="fas fa-moon" id="theme-toggle"></i>
+        </button>
 
-</div>
+    </div>
 
      <!-- ================= HOME PAGE ================= -->
     <section class="home" id="home">
@@ -54,7 +54,7 @@
 
             <h3>Hello, It's Me</h3>
             <h1>Hashini Emalsha</h1>
-            <h3>And I'm a <span class="highlight">Full Stack Developer</span></h3>
+            <h3>And I'm a <span class="text"></span></h3>
 
             <p class="description-home">
                 I'm an undergraduate with a passion for web development and UI/UX design.
@@ -497,7 +497,7 @@
                         <span>100%</span>
                     </div>
                     <div class="bar">
-                        <div class="fill" style="width: 100%;"></div>
+                        <div class="fill" style="--target-width: 100%;"></div>
                     </div>
                 </div>
                 
@@ -507,7 +507,7 @@
                         <span>80%</span>
                     </div>
                     <div class="bar">
-                        <div class="fill" style="width: 80%;"></div>
+                        <div class="fill" style="--target-width: 80%;"></div>
                     </div>
                 </div>
                 
@@ -517,7 +517,7 @@
                         <span>80%</span>
                     </div>
                     <div class="bar">
-                        <div class="fill" style="width: 80%;"></div>
+                        <div class="fill" style="--target-width: 80%;"></div>
                     </div>
                 </div>
             </div>
@@ -530,7 +530,7 @@
                         <span>100%</span>
                     </div>
                     <div class="bar">
-                        <div class="fill" style="width: 100%;"></div>
+                        <div class="fill" style="--target-width: 100%;"></div>
                     </div>
                 </div>
                 
@@ -540,7 +540,7 @@
                         <span>95%</span>
                     </div>
                     <div class="bar">
-                        <div class="fill" style="width: 95%;"></div>
+                        <div class="fill" style="--target-width: 95%;"></div>
                     </div>
                 </div>
                 
@@ -550,7 +550,7 @@
                         <span>100%</span>
                     </div>
                     <div class="bar">
-                        <div class="fill" style="width: 100%;"></div>
+                        <div class="fill" style="--target-width: 100%;"></div>
                     </div>
                 </div>
 
@@ -560,7 +560,7 @@
                         <span>80%</span>
                     </div>
                     <div class="bar">
-                        <div class="fill" style="width: 80%;"></div>
+                        <div class="fill" style="--target-width: 80%;"></div>
                     </div>
                 </div>
             </div>
@@ -612,32 +612,32 @@
             <h3>Technical Skills</h3>
             <div class="teck-skill">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="40" height="40">
-                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                <div class="bar"><div class="fill" style="--target-width: 80%;"></div></div>
                 <span>80%</span>
             </div>
             <div class="tech-skill">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="40" height="40">
-                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                <div class="bar"><div class="fill" style="--target-width: 90%;"></div></div>
                 <span>90%</span>
             </div>
             <div class="tech-skill">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="40" height="40">
-                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                <div class="bar"><div class="fill" style="--target-width: 90%;"></div></div>
                 <span>90%</span>
             </div>
             <div class="tech-skill">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="40" height="40">
-                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                <div class="bar"><div class="fill" style="--target-width: 85%;"></div></div>
                 <span>85%</span>
             </div>
             <div class="tech-skill">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" width="40" height="40">
-                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                <div class="bar"><div class="fill" style="--target-width: 80%;"></div></div>
                 <span>80%</span>
             </div>
             <div class="tech-skill">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40" height="40">
-                <div class="bar"><div class="fill" style="width: 85%;"></div></div>
+                <div class="bar"><div class="fill" style="--target-width: 85%;"></div></div>
                 <span>85%</span>
             </div>
         </div>
@@ -978,5 +978,7 @@
     </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="script.js"></script>
 </body>
 </html>
