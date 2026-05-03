@@ -23,7 +23,7 @@ body.light-mode {
     color: #0f0817;
 }
 
-body::before {
+body::before { 
     content: '';
     position: fixed;
     top: 0;
