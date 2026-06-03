@@ -2,13 +2,13 @@
 
 A modern, responsive, and interactive personal portfolio website designed to showcase my educational background, technical skills, projects, certifications, and professional journey in Software Engineering and Web Development.
 
+## 📸 Preview
+
+![Portfolio Preview](./asset/picture.png)
+
 ## 👩‍💻 About Me
 
 Hello! I'm **Hashini Emalsha**, an undergraduate Software Engineering student passionate about creating modern, user-friendly, and responsive web applications. This portfolio reflects my academic achievements, technical expertise, projects, and continuous learning journey in the field of Information Technology.
-
-## 📸 Preview
-
-![Portfolio Preview](./asset/Screenshot%202026-02-27%20110809.png)
 
 ## ✨ Key Features
 
